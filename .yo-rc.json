@@ -1,0 +1,11 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "neoplus",
+      "unitTestsEnabled": false,
+      "useAzureAppInsights": false
+    },
+    "libraryName": "teamsGuideApp",
+    "generator-version": "2.15.0"
+  }
+}
