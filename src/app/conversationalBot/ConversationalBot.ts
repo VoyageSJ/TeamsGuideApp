@@ -19,6 +19,10 @@ const log = debug("msteams");
 
 /**
  * Implementation for ConversationalBot Bot
+ * https://portal.azure.com/#home
+ * 리소스 그룹 추가
+ * 리소스 그룹 > 리소스 추가 > Bot Channels Registration
+ * endpoint url 지정: "/api/messages2"
  */
 @BotDeclaration(
     "/api/messages2",
