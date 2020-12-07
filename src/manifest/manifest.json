@@ -11,8 +11,8 @@
     "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
   },
   "name": {
-    "short": "TeamsGuideApp",
-    "full": "TeamsGuideApp"
+    "short": "teamsguideapp",
+    "full": "teamsguideapp"
   },
   "description": {
     "short": "TODO: add short description here",

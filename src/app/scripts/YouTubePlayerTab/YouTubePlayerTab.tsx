@@ -14,7 +14,7 @@ import * as microsoftTeams from "@microsoft/teams-js";
 
 
 /**
- * State for the teamsGuideAppTabTab React component
+ * State for the teamsguideappTabTab React component
  */
 export interface IYouTubePlayerTabState extends ITeamsBaseComponentState {
     entityId?: string;
@@ -23,14 +23,14 @@ export interface IYouTubePlayerTabState extends ITeamsBaseComponentState {
 }
 
 /**
- * Properties for the teamsGuideAppTabTab React component
+ * Properties for the teamsguideappTabTab React component
  */
 export interface IYouTubePlayerTabProps {
 
 }
 
 /**
- * Implementation of the teamsGuideAppTab content page
+ * Implementation of the teamsguideappTab content page
  */
 export class YouTubePlayerTab extends TeamsBaseComponent<IYouTubePlayerTabProps, IYouTubePlayerTabState> {
 

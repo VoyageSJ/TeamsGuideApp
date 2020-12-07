@@ -5,7 +5,7 @@
       "unitTestsEnabled": false,
       "useAzureAppInsights": false
     },
-    "libraryName": "teamsGuideApp",
+    "libraryName": "teamsguideapp",
     "generator-version": "2.15.0"
   }
 }

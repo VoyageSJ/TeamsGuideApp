@@ -1,4 +1,4 @@
-# >>>>> TeamsGuideApp - Microsoft Teams App <<<<<
+# >>>>> teamsguideapp - Microsoft Teams App <<<<<
 
 
 # ./PersonalTab/PersonalTab
@@ -49,7 +49,7 @@
 #  ├─ 봇
 #  └─ https://portal.azure.com/#@wspw.onmicrosoft.com/resource/subscriptions/45b2cc15-51b5-4b6c-99cf-260ddc6f5026/resourceGroups/exercise-action-commands/providers/Microsoft.BotService/botServices/exercise-conversational-bot/settings
 
-# >>>>> TeamsGuideApp - Microsoft Teams App <<<<<
+# >>>>> teamsguideapp - Microsoft Teams App <<<<<
 
 Generate a Microsoft Teams application.
 
