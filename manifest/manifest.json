@@ -1,0 +1,146 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.7",
+  "id": "adf4f0ba-e4d5-438a-86ea-d6719e2668b5",
+  "version": "0.0.1",
+  "packageName": "{{PACKAGE_NAME}}",
+  "developer": {
+    "name": "neoplus",
+    "websiteUrl": "https://{{HOSTNAME}}",
+    "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "teamsguideapp",
+    "full": "teamsguideapp"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{{HOSTNAME}}/configMathTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ],
+      "sharePointPreviewImage": "https://{{HOSTNAME}}/assets/configMathTab-preview.png",
+      "supportedSharePointHosts": [
+        "sharePointFullPage",
+        "sharePointWebPart"
+      ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "024795e2-156f-4e48-9aec-bbf966d1f08b",
+      "name": "PersonalTab",
+      "contentUrl": "https://{{HOSTNAME}}/PersonalTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "02c14048-a4a5-4278-be85-9753fcf63d5a",
+      "name": "YouTubePlayerTab",
+      "contentUrl": "https://{{HOSTNAME}}/YouTubePlayerTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "060e5a3e-23d7-4b29-bbcf-5702ea318aeb",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal"
+      ],
+      "supportsFiles": false,
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "MentionMe",
+              "description": "Sends message with @mention of the sender"
+            },
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            },            
+            {
+              "title": "exercise",
+              "description": "show botExercise link"
+            }
+          ]
+        }
+      ]
+    }  
+  ],
+  "connectors": [],
+  "composeExtensions": [
+    {
+      "botId": "5d080d98-9e87-4605-ad91-15b535eaf012",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "id": "planetExpanderAction",
+          "type": "action",
+          "title": "Planet Expander",
+          "description": "Lookup the details of a planet.",
+          "context": [
+            "compose",
+            "message"
+          ],
+          "fetchTask": true
+        },
+        {
+          "id": "planetExpanderSearch",
+          "type": "query",
+          "title": "Planet Lookup",
+          "description": "Search for a planet.",
+          "context": [
+            "compose"
+          ],
+          "parameters": [
+            {
+              "name": "searchKeyword",
+              "description": "Enter 'inner','outer' or the name of a specific planet",
+              "title": "Planet"
+            }
+          ]
+        }
+      ],
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "*.wikipedia.org"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "voyagesj.github.io"
+  ],
+  "showLoadingIndicator": false
+}
