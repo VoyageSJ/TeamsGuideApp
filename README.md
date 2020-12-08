@@ -13,40 +13,56 @@
 
 ## ./teamWebHooksOutgoingWebhook/TeamWebhooksOutgoingWebhook
  [TeamWebhooksOutgoingWebhook](]https://docs.microsoft.com/en-us/learn/modules/msteams-webhooks-connectors/3-exercise-outgoing-webhooks)
+  
   ├─ 배포 후 Teams 의 channel 에서 OutgoingWebHook 설정 필요.
+  
   ├─ Once you're signed in, select a channel in a team you want to add the webhook to. From the channel's page, select the + in the top navigation:
+  
   ├─ ex: 0b0910d3d727.ngrok.io
+  
   └─ Callback URL: https://{{REPLACE_NGROK_SUBDOMAIN}}.ngrok.io/api/webhook
 
 
 ## ./teamWebHooksIncomingWebHook/TeamWebhooksIncomingWebhook
  [exercise-incoming-webhooks](https://docs.microsoft.com/en-us/learn/modules/msteams-webhooks-connectors/5-exercise-incoming-webhooks)
+  
   └─ IncomingWebHook 은 Postman 이용하여 호출하는 것만 있음. 추가 업로드는 없음
 
 
 ## ./planetBot/planetBot
  [exercise-action-commands](https://docs.microsoft.com/en-us/learn/modules/msteams-messaging-extensions/3-exercise-action-commands)
+ 
  [exercise-search-commands](https://docs.microsoft.com/en-us/learn/modules/msteams-messaging-extensions/5-exercise-search-commands)
+ 
  [exercise-unfurl-links](https://docs.microsoft.com/en-us/learn/modules/msteams-messaging-extensions/7-exercise-unfurl-links)
+  
   ├─ 봇을 이용한 Messaging extensions 활용
+  
   └─ https://portal.azure.com 에서 서비스 등록 필요
 
 
 ## ./YouTubePlayerTab/YouTubePlayerTab
 ## ./YouTubePlayerTab/VideoSelectorTaskModule
  [exercise-use-task-modules-tabs](https://docs.microsoft.com/en-us/learn/modules/msteams-task-modules/3-exercise-use-task-modules-tabs)
+ 
  [exercise-use-adaptive-cards-deep-links](https://docs.microsoft.com/en-us/learn/modules/msteams-task-modules/5-exercise-use-adaptive-cards-deep-links)
+  
   ├─ 비디오 플레이어 작업 모듈을 시작하기위한 깊은 링크
+  
   ├─ https://teams.microsoft.com/l/task/{{APPID}}?url=https://{{REPLACE_NGROK_SUBDOMAIN}}/youTubePlayerTab/player.html?vid=VlEH4vtaxp4&height=700&width=1000&title=YouTube%20Player
+  
   └─ https://teams.microsoft.com/l/task/adf4f0ba-e4d5-438a-86ea-d6719e2668b5?url=https://50afd5d27863.ngrok.io/youTubePlayerTab/player.html?vid=VlEH4vtaxp4&height=700&width=1000&title=YouTube%20Player
 ## ./learningTeamsBot/learningTeamsBot
  [exercise-use-task-modules-bots](https://docs.microsoft.com/en-us/learn/modules/msteams-task-modules/7-exercise-use-task-modules-bots)
+  
   ├─ 봇을 이용한 TaskModule 의 활용
+  
   └─ https://portal.azure.com 에서 서비스 등록 필요
 
 
 ## ./conversationalBot/ConversationalBot
  [Exercise - Creating conversational bots for Microsoft Teams](https://docs.microsoft.com/en-us/learn/modules/msteams-conversation-bots/3-exercise-conversation-bots)
+  
   └─ https://portal.azure.com 에서 서비스 등록 필요
   
 ## .env 파일은 github에 업로드 되지 않으므로 별도의 구성이 필요하다. 다음의 항목들이 필요함
