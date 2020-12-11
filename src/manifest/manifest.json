@@ -73,6 +73,10 @@
           ],
           "commands": [
             {
+              "title": "Hello",
+              "description": "Say hello to bot"
+            },
+            {
               "title": "MentionMe",
               "description": "Sends message with @mention of the sender"
             },
@@ -82,7 +86,11 @@
             },            
             {
               "title": "exercise",
-              "description": "show botExercise link"
+              "description": "Show botExercise link"
+            },
+            {
+              "title":"learn",
+              "description": "Show Learn Microsoft Teams video"
             }
           ]
         }
